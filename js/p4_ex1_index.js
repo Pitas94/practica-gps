@@ -35,7 +35,7 @@ function mostrarTotesLesDades(){
             boton.id = rutes[i].id;
             let eliminar = document.createElement("img");
             eliminar.classList.add("src");
-            eliminar.setAttribute("src", "img/delete.png");
+            eliminar.setAttribute("src", "/practica-gps/img/delete.png");
             boton.appendChild(eliminar)
             contenedor.appendChild(boton);
             llistaRutes.appendChild(contenedor);

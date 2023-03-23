@@ -1,5 +1,5 @@
-var rutaAMostrar = recuperarDades();
-rutaAMostrar = rutaAMostrar[rutaAMostrar.length-1].llistaCoordenades;
+var rutaAMostrar = JSON.parse(localStorage.getItem("resumActivitat"));
+rutaAMostrar = rutaAMostrar.llistaCoordenades;
 
 var latitud = rutaAMostrar[Math.trunc((rutaAMostrar.length-1)/2)][0];
 var longitud = rutaAMostrar[Math.trunc((rutaAMostrar.length-1)/2)][1];
@@ -36,13 +36,14 @@ function recuperarDades(){
 }
 
 function mostrarDades(){
-    let dades = recuperarDades();
-    activitat.textContent = dades[dades.length-1].activitat;
-    descripcio.textContent = dades[dades.length-1].descripcio;
-    usuari.textContent = dades[dades.length-1].nom;
-    data.textContent = dades[dades.length-1].data;
-    duracio.textContent = dades[dades.length-1].duracio;
-    llargada.textContent = dades[dades.length-1].distancia;
+    let dades = JSON.parse(localStorage.getItem("resumActivitat"));
+    activitat.textContent = dades.activitat;
+    descripcio.textContent = dades.descripcio;
+    usuari.textContent = dades.nom;
+    data.textContent = dades.data;
+    duracio.textContent = dades.duracio;
+    llargada.textContent = dades.distancia;
 }
 
 mostrarDades();
+storage.removeItem("resumActivitat");
