@@ -68,6 +68,7 @@ function eliminarRegistre(id){
     setTimeout(() => {
         mostrarTotesLesDades();
         eventEliminar();
+        eventResumActivitat();
     }, 1);
 }
 
