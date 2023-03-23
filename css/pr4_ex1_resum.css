@@ -31,7 +31,7 @@ h1{
     min-height: 64px;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: minmax(60px, auto) minmax(60px, auto) minmax(60px, auto);
+    grid-template-rows: minmax(64px, auto) minmax(64px, auto) minmax(64px, auto);
     grid-gap: 8px;
     justify-content: center;
     border: 1px solid black;
