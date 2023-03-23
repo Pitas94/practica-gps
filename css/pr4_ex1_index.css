@@ -32,7 +32,7 @@ body{
 }
 
 .contenedor{
-    width: 360px;
+    max-width: 358px;
     border: 1px solid black;
     border-radius: 10px;
     display: grid;
