@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="../css/resum.css">
     <title>Llistat d'activitats</title>
 </head>
 <body>
     <h1>Resum de l'activitat</h1>
-    <h3>Tipus d'activitat</h3>
-    <span id="activitat"></span>
-    <h3>Usuari</h3>
-    <span id="usuari"></span>
-    <h3>Data</h3>
-    <span id="data"></span>
-    <h3>Duracio</h3>
-    <span id="duracio"></span>
-    <h3>Distancia</h3>
-    <span id="distancia"></span>
+    <div id="map"></div>
+        <div class="contenedor">
+            <div class="info">
+                <h3>Tipus d'activitat</h3>
+                <span id="activitat"></span>
+            </div>
+            <div class="info">
+                <h3>Descripcio</h3>
+                <span id="descripcio"></span>
+            </div>
+            <div class="info">
+                <h3>Usuari</h3>
+                <span id="usuari"></span>
+            </div>
+            <div class="info">
+                <h3>Data</h3>
+                <span id="data"></span>
+            </div>
+            <div class="info">
+                <h3>Duracio</h3>
+                <span id="duracio"></span>
+            </div>
+            <div class="info">
+                <h3>Distancia</h3>
+                <span id="distancia"></span>
+            </div>
+        </div>
+    </div>
+    <div class="inici">Torna a la pàgina d'inici</div>  
     <script src="../js/pr4_ex1_resum.js"></script>
 </body>
 </html>

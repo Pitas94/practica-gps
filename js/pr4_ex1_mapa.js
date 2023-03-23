@@ -124,13 +124,15 @@ function recuperarDades(){
 
 
 function iniciar(){
-    document.getElementsByClassName("grabacio")[0].innerHTML = "La grabació del recorregut està ACTIVADA";
+    document.getElementsByClassName("grabacio")[0].innerHTML = "El recorregut de l'activitat sestà gravant";
+    document.getElementsByClassName("grabacio")[0].classList.add("animacio");
     horaInici = new Date().getTime();
     iniciaWatchPosition();
 }
 
 function acabar(){
-    document.getElementsByClassName("grabacio")[0].innerHTML = "La grabació del recorregut està PARADA";
+    document.getElementsByClassName("grabacio")[0].innerHTML = "";
+    document.getElementsByClassName("grabacio")[0].classList.remove("animacio");
     horaFinal = new Date().getTime();
     pararWatchPosition();
     let rutes = recuperarDades();

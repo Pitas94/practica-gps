@@ -6,25 +6,49 @@
 body{
     width: 360px;
     display: flex;
-    margin: 16px auto;
+    margin: 16px auto 48px auto;
+}
+
+label{
+    font-size: 24px;
+}
+
+input{
+    font-size: 24px;
+    text-align: center;
+}
+
+select{
+    font-size: 24px;
+    text-align: center;
 }
 
 .cajaInput{
     display: flex;
     flex-direction: column;
     margin-bottom: -15px;
-
 }
 
 .cajaInput label{
     margin: auto;
-    margin-bottom: -15px;
+
 }
 
-.entrada {
+.entrada{
     width: 300px;
     height: 40px;
     margin-bottom: 24px;
     border-radius: 10px;
     border: 1px solid black;
+}
+
+.iniciar{
+    font-size: 24px;
+    background-color: rgb(27, 190, 89);
+    margin-top: 24px;
+    height: 60px;
+}
+
+.iniciar:hover{
+    cursor: pointer;
 }

@@ -6,30 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="../css/mapa.css">
     <title>Practica 4 Mapa</title>
-    <style>
-        #map { height: 360px;
-                width: 360px;
-                display: flex;
-                margin: auto;
-             }
-        .botons {
-            height: 50px;
-            display: flex;
-            margin: auto;
-            justify-content: center;
-        }
-    </style>
 </head>
 <body>
     <div id="map"></div>
     <div class="botons">
         <button class="iniciar">Iniciar</button>
-        <form action="pr4_ex1_resum.html">
-            <button class="acabar" id="acabar">Acabar</button><br>
-        </form>
+        <button class="acabar" id="acabar"><a href="pr4_ex1_resum.html">Acabar</a></button><br>
     </div>
-    <p class="grabacio botons">La grabació del recorregut està PARADA</p>
+    <p class="grabacio"></p>
     <script src="../js/pr4_ex1_mapa.js"></script>
 </body>
 </html>
