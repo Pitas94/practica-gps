@@ -22,7 +22,7 @@ body{
 }
 
 .iniciar{
-    height: 60px;
+    height: 64px;
     font-size: 24px;
     background-color: rgb(27, 190, 89);
     border: 1px solid black;
@@ -34,7 +34,7 @@ body{
 }
 
 .acabar{
-    height: 60px;
+    height: 64px;
     font-size: 24px;
     background-color: rgb(255, 65, 65);
     border: 1px solid black;
@@ -53,7 +53,7 @@ body{
 
 .grabacio{
     font-size: 16px;
-    height: 30px;
+    height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;

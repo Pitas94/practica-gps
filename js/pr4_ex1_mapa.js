@@ -115,6 +115,7 @@ function calcularDistancia(){
 
 function guardarDades(dades){
     localStorage.setItem("llistaRutes", JSON.stringify(dades));
+    localStorage.setItem("resumActivitat", JSON.stringify(dades[dades.length-1]));
 }
 
 function recuperarDades(){

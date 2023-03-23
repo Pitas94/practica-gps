@@ -67,7 +67,28 @@ function eliminarRegistre(id){
     eventEliminar();
 }
 
+function eventResumActivitat(){
+    let eventActivitat = document.getElementsByClassName("contenedor");
+    for(let i=0;i<eventActivitat.length;i++){
+        eventActivitat[i].addEventListener("click", () => {
+            let id = eventActivitat[i].classList[1].toString();
+            resumActivitat(id);
+        })
+    }
+}
+
+function resumActivitat(id){
+    let rutes = recuperarDades();
+    rutes.forEach(e => {
+        if(e.id == id){
+            localStorage.setItem("resumActivitat", JSON.stringify(e));
+            window.location.href = "html/pr4_ex1_resum.html";
+        }
+    });
+}
+
 
 
 mostrarTotesLesDades();
 eventEliminar();
+eventResumActivitat();
