@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 360px;
+    margin: 16px auto;
+}
+
+.novaRuta{
+    display: flex;
+    margin: auto;
+    width: 360px;
+    height: 60px;
+    background-color: rgb(27, 190, 89);
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.novaRuta a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor {
+    width: 360px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 8px;
+    margin: 16px auto;
+    background-color: rgb(222, 255, 229);
+}
+
+button{
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    padding: 0;
+    margin: 8px auto;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 8px;
+}
